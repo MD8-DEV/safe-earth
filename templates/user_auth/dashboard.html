@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Welcome, {{ user.username }}</h1> 
+    <a href="/logout"> logout </a>
+    <hr>
+    <div class="chat-div">
+        <!-- <div class="message">
+            @mohamed
+            - hello
+        </div> -->
+        <input type="text" id="message"/>
+        <input type="button" value="Send" id="message-send"/>
+    </div>
+    <script>
+        const socket = new WebSocket("ws://" + window.location.host + "/")
+        socket.onopen = function () {
+            console.log("IAM HERE")
+        }
+        socket.onclose = function (){
+            console.error("IAM NOT HERE")
+        }
+    </script>
+</body>
+</html>
