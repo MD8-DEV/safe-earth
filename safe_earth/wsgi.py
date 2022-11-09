@@ -1,5 +1,5 @@
 """
-WSGI config for green_earth project.
+WSGI config for safe_earth project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'green_earth.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'safe_earth.settings')
 
 application = get_wsgi_application()

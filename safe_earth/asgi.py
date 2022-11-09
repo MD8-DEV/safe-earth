@@ -1,5 +1,5 @@
 """
-ASGI config for green_earth project.
+ASGI config for safe_earth project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
