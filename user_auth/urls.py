@@ -5,5 +5,4 @@ urlpatterns = [
     path('login', Login.as_view(), name='login'),
     path('logout', Logout.as_view(), name='logout'),
     path('signup', Signup.as_view(), name='sign'),
-    path('dashboard', Dashboard.as_view(), name="dash")
 ]

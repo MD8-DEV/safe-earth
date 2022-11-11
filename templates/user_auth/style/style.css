@@ -21,7 +21,7 @@ body{
 }
 
 .content{
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,7 @@ body{
 
 form{
     background-color: #A3DE8333 !important;
-    padding: 10%;
+    padding: 8%;
     border-radius: 2%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.177);
 }
