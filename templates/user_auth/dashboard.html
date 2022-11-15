@@ -10,22 +10,8 @@
     <h1>Welcome, {{ user.username }}</h1> 
     <a href="/auth/logout"> logout </a>
     <hr>
-    <div class="chat-div">
-        <!-- <div class="message">
-            @mohamed
-            - hello
-        </div> -->
-        <input type="text" id="message"/>
-        <input type="button" value="Send" id="message-send"/>
-    </div>
-    <script>
-        const socket = new WebSocket("ws://" + window.location.host + "/")
-        socket.onopen = function () {
-            console.log("IAM HERE")
-        }
-        socket.onclose = function (){
-            console.error("IAM NOT HERE")
-        }
-    </script>
+        <form action="">
+            <input type="text" name="q" placeholder="Chat with ..."/>
+        </form>
 </body>
 </html>
